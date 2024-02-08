@@ -8,7 +8,6 @@ def encrypt(text,s):
 		# Encrypt uppercase characters
 		if (char.isupper()):
 			result += chr((ord(char) + s-65) % 26 + 65)
-
 		# Encrypt lowercase characters
 		else:
 			result += chr((ord(char) + s - 97) % 26 + 97)
